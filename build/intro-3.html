@@ -1,0 +1,28 @@
+<ion-slides [options]="{pager:true}">
+	<ion-slide>
+	  <div class="icon-hero"><img src="https://lasid.org/wp-content/uploads/2015/09/lasid_logo_fondo_blanco.png" class="custom-logo" />
+</div>
+	  <h2 class="slide-title">Wellcome</h2>
+	  <p>Thank you for downloading our app. Here you can access all the resources and information material produced by our society</p>
+	</ion-slide>
+	<ion-slide>
+	  <div class="icon-hero"><ion-icon name="contacts"></ion-icon></div>
+	  <h2 class="slide-title">Connect</h2>
+	  <p>In order for you to enjoy all the functions of this app, you need to identify as a member of LASID</p>
+	</ion-slide>
+    <ion-slide>
+      <div class="icon-hero"><ion-icon name="contact"></ion-icon></div>
+      <h2 class="slide-title">Join</h2>
+      <p>If you have not joined us, you can register in the following link</p>
+      <p><button ion-button (click)="pushPage('https://lasid.org/join/')">Register</button>
+</p>
+    </ion-slide>
+	<ion-slide>
+	  <div class="icon-hero"><ion-icon name="checkmark-circle"></ion-icon></div>
+	  <h2 class="slide-title">All done?</h2>
+	  <button ion-button large (click)="openPage(pages.menus.items[0])">
+	    Get Started
+	    <ion-icon name="arrow-forward"></ion-icon>
+	  </button>
+	</ion-slide>
+</ion-slides>
